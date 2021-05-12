@@ -1,0 +1,22 @@
+<!-- This is just to test mocky API -->
+<!DOCTYPE html>
+<html>
+        <h1>This is Mocky API test </h1>
+        <p>When any link on the previous page is clicked,<br> a mock data will be generated as shown on the screen</p>.
+
+    <body>
+        <script>
+            var url="https://run.mocky.io/v3/589dc69e-7661-475d-90af-8233d895b2b4";
+        var xhr= new XMLHttpRequest();
+        xhr.oneerror=function(){
+        alert("Error");
+        }
+        xhr.onload=function(){
+            alert(this.responseText);
+        };
+        xhr.open('Get',url,true);
+        xhr.withCredentials=true;
+        xhr.send();
+        </script>
+    </body>
+</html>
